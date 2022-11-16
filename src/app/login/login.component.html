@@ -1,0 +1,32 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <h1></h1>
+      <img src="assets/logo.jpg" id="icon" alt="User Icon" />
+      <h1>Esports Club</h1>
+    </div>
+
+    <!-- Login Form -->
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+      <input formControlName="email" id="login" class="fadeIn second" name="login" placeholder="username">
+      <p> </p>
+      <input formControlName="password" type="password" id="password" class="fadeIn third" name="login" placeholder="password">
+      <p> </p>
+      <input type="submit" class="fadeIn fourth" value="Log In">
+    </form>
+
+    <!-- next page -->
+    <div id="formFooter">
+        <a routerLink="/signup">New User? Clik to signup!!</a>
+    </div>
+
+  </div>
+</div>
